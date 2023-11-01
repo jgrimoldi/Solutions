@@ -1,0 +1,42 @@
+{
+  "name": "solutions",
+  "version": "1.0.0",
+  "description": "Leetcode & HackerRank Solutions: Javascript",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "lint": "npm run lint",
+    "test": "set NODE_OPTIONS=--experimental-vm-modules && jest",
+    "test:watch": "npm run test -- --watch", 
+    "test:wall": "npm run test -- --watchAll" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jgrimoldi/solutions.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jgrimoldi/solutions/issues"
+  },
+  "homepage": "https://github.com/jgrimoldi/solutions#readme",
+  "keywords": [
+    "LeetCode",
+    "HackerRank",
+    "Javascript"
+  ],
+  "author": "Joaquin Grimoldi",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "29.7.0",
+    "semistandard": "17.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "verbose": true
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/semistandard/eslintrc.json",
+    "env": {
+      "jest": true
+    }
+  }
+}
