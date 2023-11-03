@@ -1,7 +1,9 @@
 /**
+ * Given a string s, find the length of the longest substring without repeating characters.
  * @param {string} string
  * @return {number}
  */
+
 export function lengthOfLongestSubstring (string) {
   if (string === undefined || string === null) return 0;
   if (string.length < 1) return 0;
