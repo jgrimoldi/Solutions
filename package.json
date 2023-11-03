@@ -5,7 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "lint": "npm run lint",
+    "leetcode": "node ./src/leetcode/%npm_config_file%",
+    "rank": "node ./src/hackerrank/%npm_config_file%",
+    "lint": "semistandard",
     "test": "set NODE_OPTIONS=--experimental-vm-modules && jest",
     "test:watch": "npm run test -- --watch", 
     "test:wall": "npm run test -- --watchAll" 
