@@ -11,8 +11,3 @@ export function createCounter (number) {
     return number++;
   };
 }
-
-const counter = createCounter(-2);
-console.log(counter()); // 10
-console.log(counter()); // 11
-console.log(counter()); // 12
